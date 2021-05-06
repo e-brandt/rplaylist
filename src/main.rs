@@ -52,7 +52,7 @@ fn parse_args() -> (String, i32, f32, bool) {
     )
 }
 
-//Reads the input file and returns a Vec of Songs, with the first Song being the last in the file
+//Reads the input file and populates the suppied Vec of Songs, with the first Song being the last in the file
 fn read_songs(input_file: &File, songs_list: &mut Vec<Song>) -> Result<(), Box<dyn Error>> {
     let mut reader = csv::Reader::from_reader(input_file);
     for row in reader.deserialize() {
