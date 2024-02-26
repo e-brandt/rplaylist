@@ -21,7 +21,7 @@ struct Song {
 fn parse_args() -> (String, i32, f32, bool) {
     let matches = clap_app!(rplaylist =>
         (version: "0.1.0")
-        (author: "github.com/e-dm-b")
+        (author: "github.com/e-brandt")
         (about: "Uses a modified Markov chain to generate a playlist based on Last.fm listening history")
         (@arg INPUT: +required "Sets the input file to use")
         (@arg LENGTH: -l --length +takes_value "Sets the number of songs in the generated playlist")
